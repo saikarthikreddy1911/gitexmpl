@@ -1,0 +1,451 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/karthik/Documents/gitexmpl/memory/s_ram
+T_opt
+Z2 !s11d pkg /home/karthik/Documents/gitexmpl/memory/s_ram/work 1 mem_intf 1 /home/karthik/Documents/gitexmpl/memory/s_ram/work 
+!s110 1716567515
+VgXjVIK6X=JRhGjmW><EV13
+Z3 04 6 4 work tb_top fast 0
+=1-000ae431a4f1-6650bddb-7ca08-ef35
+Z4 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2_1;73
+R1
+T_opt1
+R2
+!s110 1716567181
+V=14dPg2;CQcZ@k[cM:n]l2
+R3
+=1-000ae431a4f1-6650bc8d-720b8-ed54
+R4
+o-quiet -auto_acc_if_foreign -work work -debugdb
+R5
+n@_opt1
+R6
+R1
+T_opt2
+R2
+!s110 1716539735
+VCTM4jcn_2X9AXoe2MO3ZI0
+R3
+=1-000ae431a4f1-66505157-4423b-be91
+R4
+o-quiet -auto_acc_if_foreign -work work
+R5
+n@_opt2
+R6
+R1
+Xdriver_sv_unit
+Z7 !s115 mem_intf
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z9 DXx4 work 3 pkg 0 22 CaCe>3GMCjGUgAm>V_O:63
+Z10 !s110 1716567500
+VREDg5f=Hj>0VF260Kg<f10
+r1
+!s85 0
+!i10b 1
+!s100 KVN2MYeoVAe`?2K@EhA=41
+IREDg5f=Hj>0VF260Kg<f10
+!i103 1
+S1
+R1
+w1716565246
+8/home/karthik/Documents/gitexmpl/memory/s_ram/driver.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/driver.sv
+!i122 350
+Z11 L0 1 0
+Z12 OL;L;2021.2_1;73
+31
+Z13 !s108 1716567500.000000
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/driver.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/driver.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vDualPortRam
+R8
+Z15 !s110 1716637313
+!i10b 1
+!s100 o>BzAORm9BY^>zVHJFLVD2
+IXWl;;W`^>Sb`F@CJ6ikZn2
+S1
+R1
+w1716548520
+8dram.sv
+Fdram.sv
+!i122 360
+L0 1 41
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+R12
+r1
+!s85 0
+31
+Z17 !s108 1716637313.000000
+!s107 test.sv|environment.sv|scoreboard.sv|refernce_model.sv|monitor.sv|driver.sv|generator.sv|transaction.sv|top.sv|interface.sv|dram.sv|package.sv|
+Z18 !s90 package.sv|dram.sv|interface.sv|top.sv|
+!i113 0
+Z19 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@dual@port@ram
+Xenvironment_sv_unit
+R7
+R8
+Z20 DXx4 work 3 pkg 0 22 3Rf88I84Lkbi<;GjWh0l[1
+R10
+ViRTFDIU9XRbZFMSUYMSco3
+r1
+!s85 0
+!i10b 1
+!s100 363JAVNX3BJ`_]Ma2O6432
+IiRTFDIU9XRbZFMSUYMSco3
+!i103 1
+S1
+R1
+w1716567494
+8/home/karthik/Documents/gitexmpl/memory/s_ram/environment.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/environment.sv
+!i122 355
+R11
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/environment.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/environment.sv|
+!i113 0
+R14
+R5
+Xgenerator_sv_unit
+R8
+R9
+R10
+VPV>dSjnoeXbg];576lNlk2
+r1
+!s85 0
+!i10b 1
+!s100 QkBVEDS=Ochbf5UK:JX6b1
+IPV>dSjnoeXbg];576lNlk2
+!i103 1
+S1
+R1
+w1716565283
+8/home/karthik/Documents/gitexmpl/memory/s_ram/generator.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/generator.sv
+!i122 349
+R11
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/generator.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/generator.sv|
+!i113 0
+R14
+R5
+Ymem_intf
+Z21 !s105 top_sv_unit
+Z22 DXx4 work 11 top_sv_unit 0 22 QXF7dPAf4?=QFQSh3hge?2
+R8
+R15
+!i10b 1
+!s100 7a:5:R?=2i68CXA^7fd:`1
+IegSH6_F>:kb:KVe8G?oND3
+S1
+R1
+Z23 w1716566858
+8interface.sv
+Z24 Finterface.sv
+!i122 360
+R11
+R16
+R12
+r1
+!s85 0
+31
+R17
+Z25 !s107 test.sv|environment.sv|scoreboard.sv|refernce_model.sv|monitor.sv|driver.sv|generator.sv|transaction.sv|top.sv|interface.sv|dram.sv|package.sv|
+R18
+!i113 0
+R19
+R5
+Xmonitor_sv_unit
+R7
+R8
+R9
+R10
+VE06aXn38Qa6dzB4hl0GHM1
+r1
+!s85 0
+!i10b 1
+!s100 4R7Z1Dk<A4Q`ShMgQ2GR42
+IE06aXn38Qa6dzB4hl0GHM1
+!i103 1
+S1
+R1
+w1716567027
+8/home/karthik/Documents/gitexmpl/memory/s_ram/monitor.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/monitor.sv
+!i122 351
+R11
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/monitor.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/monitor.sv|
+!i113 0
+R14
+R5
+Xpkg
+R7
+R8
+R15
+!i10b 1
+!s100 OXXzdz=6C<9H0`A1D;?ed2
+I5bEfAg=J2bL@d^H<>3:gF0
+S1
+R1
+w1716614145
+8package.sv
+Fpackage.sv
+Ftransaction.sv
+Fgenerator.sv
+Fdriver.sv
+Fmonitor.sv
+Frefernce_model.sv
+Fscoreboard.sv
+Fenvironment.sv
+Ftest.sv
+!i122 360
+Z26 L0 2 0
+V5bEfAg=J2bL@d^H<>3:gF0
+R12
+r1
+!s85 0
+31
+R17
+R25
+R18
+!i113 0
+R19
+R5
+Xscoreboard_sv_unit
+R8
+R9
+R10
+VoJl]lBP_?FED1H;m12:[A3
+r1
+!s85 0
+!i10b 1
+!s100 <>JD7Vl`io3@0<CPYhOcK3
+IoJl]lBP_?FED1H;m12:[A3
+!i103 1
+S1
+R1
+w1716567051
+8/home/karthik/Documents/gitexmpl/memory/s_ram/scoreboard.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/scoreboard.sv
+!i122 353
+R11
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/scoreboard.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/scoreboard.sv|
+!i113 0
+R14
+R5
+vSinglePortRAM
+R8
+R10
+!i10b 1
+!s100 SgBT8glRbzNjUnQJ9XlAL2
+Im96a>1>o]4?hFk7>15];N2
+S1
+R1
+w1710494296
+8/home/karthik/Documents/gitexmpl/memory/s_ram/sram.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/sram.sv
+!i122 358
+L0 2 33
+R16
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/sram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/sram.sv|
+!i113 0
+R14
+R5
+n@single@port@r@a@m
+vtb_top
+R8
+Z27 DXx4 work 3 pkg 0 22 5bEfAg=J2bL@d^H<>3:gF0
+R22
+R15
+R16
+r1
+!s85 0
+!i10b 1
+!s100 HH0aHfSEKPBnIeM>8bjJn3
+I[?io0hjR57H=TjSSEcYNT3
+R21
+S1
+R1
+w1716551105
+Z28 8top.sv
+Z29 Ftop.sv
+!i122 360
+L0 4 41
+R12
+31
+R17
+R25
+R18
+!i113 0
+R19
+R5
+Xtest_sv_unit
+R7
+R8
+R20
+R10
+VYJe`m57hd@LJN3:TQoX5C1
+r1
+!s85 0
+!i10b 1
+!s100 hAj0e=F9b:JX0@_k>o[hY0
+IYJe`m57hd@LJN3:TQoX5C1
+!i103 1
+S1
+R1
+w1716549819
+8/home/karthik/Documents/gitexmpl/memory/s_ram/test.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/test.sv
+!i122 356
+R26
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/test.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/test.sv|
+!i113 0
+R14
+R5
+Xtop_sv_unit
+R8
+R27
+R15
+VQXF7dPAf4?=QFQSh3hge?2
+r1
+!s85 0
+!i10b 1
+!s100 =YKWjQH6R>IjBTgdVgX=D1
+IQXF7dPAf4?=QFQSh3hge?2
+!i103 1
+S1
+R1
+R23
+R28
+R29
+R24
+!i122 360
+R26
+R12
+31
+R17
+R25
+R18
+!i113 0
+R19
+R5
+Xtransaction_sv_unit
+R8
+R9
+R10
+VDkQk:g1@cFlR`P`>_QHaz2
+r1
+!s85 0
+!i10b 1
+!s100 GPP?9da@8N=^z29Y^<nVZ2
+IDkQk:g1@cFlR`P`>_QHaz2
+!i103 1
+S1
+R1
+w1716565332
+8/home/karthik/Documents/gitexmpl/memory/s_ram/transaction.sv
+F/home/karthik/Documents/gitexmpl/memory/s_ram/transaction.sv
+!i122 348
+R11
+R12
+31
+R13
+!s107 /home/karthik/Documents/gitexmpl/memory/s_ram/transaction.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/karthik/Documents/gitexmpl/memory/s_ram/transaction.sv|
+!i113 0
+R14
+R5

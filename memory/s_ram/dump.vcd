@@ -1,0 +1,196 @@
+$date
+	Fri May 24 12:22:53 2024
+$end
+$version
+	QuestaSim Version 2021.2_1
+$end
+$timescale
+	1ns
+$end
+
+$scope module tb_top $end
+$var reg 1 ! clk $end
+
+$scope module DUT $end
+$var parameter 32 " DATA_WIDTH $end
+$var parameter 32 # ADDR_WIDTH $end
+$var wire 1 $ clk $end
+$var wire 1 % addr [2] $end
+$var wire 1 & addr [1] $end
+$var wire 1 ' addr [0] $end
+$var wire 1 ( din [7] $end
+$var wire 1 ) din [6] $end
+$var wire 1 * din [5] $end
+$var wire 1 + din [4] $end
+$var wire 1 , din [3] $end
+$var wire 1 - din [2] $end
+$var wire 1 . din [1] $end
+$var wire 1 / din [0] $end
+$var wire 1 0 en $end
+$var wire 1 1 we $end
+$var reg 8 2 dout [7:0] $end
+$var reg 8 3 temp [7:0] $end
+$upscope $end
+$upscope $end
+
+$scope begin pkg $end
+$upscope $end
+
+$scope begin top_sv_unit $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+bx 2
+bx 3
+b1000 "
+b11 #
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+0$
+$end
+#5
+1!
+1$
+11
+1/
+1.
+0-
+0,
+1+
+0*
+1)
+0(
+0'
+0&
+0%
+10
+#10
+0!
+0$
+#15
+1!
+1$
+#20
+0!
+0$
+#25
+1!
+1$
+#30
+0!
+0$
+#35
+1!
+1$
+#40
+0!
+0$
+#45
+1!
+1$
+#50
+0!
+0$
+#55
+1!
+1$
+#60
+0!
+0$
+#65
+1!
+1$
+#70
+0!
+0$
+#75
+1!
+1$
+#80
+0!
+0$
+#85
+1!
+1$
+#90
+0!
+0$
+#95
+1!
+1$
+#100
+0!
+0$
+#105
+1!
+1$
+#110
+0!
+0$
+#115
+1!
+1$
+#120
+0!
+0$
+#125
+1!
+1$
+#130
+0!
+0$
+#135
+1!
+1$
+#140
+0!
+0$
+#145
+1!
+1$
+#150
+0!
+0$
+#155
+1!
+1$
+#160
+0!
+0$
+#165
+1!
+1$
+#170
+0!
+0$
+#175
+1!
+1$
+#180
+0!
+0$
+#185
+1!
+1$
+#190
+0!
+0$
+#195
+1!
+1$

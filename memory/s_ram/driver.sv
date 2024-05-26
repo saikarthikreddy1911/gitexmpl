@@ -1,0 +1,34 @@
+import pkg::*;
+class driver;
+  
+
+    virtual mem_intf mem_vif;
+    mailbox gen2driv;
+
+    
+
+    function new(virtual mem_intf mem_vif,mailbox gen2driv);
+      this.mem_vif = mem_vif; 
+      this.gen2driv = gen2driv;
+    endfunction
+
+  
+  //drivers the transaction items to interface signals
+  task run();
+    fork
+    transaction trans =new();
+    forever @(mem_vif.driver_cb)
+      begin
+     wait(gen2driv.num()==1) 
+      gen2driv.get(trans);
+      //$display($time,"trans=%p",trans);
+      trans.display("DRIVER mailbox GET ",trans); 
+      mem_vif.addr <= trans.addr;
+        mem_vif.we <= trans.we;
+        mem_vif.din <= trans.din;
+        mem_vif.en <= trans.en; 
+      
+    end
+    join_none
+  endtask
+endclass

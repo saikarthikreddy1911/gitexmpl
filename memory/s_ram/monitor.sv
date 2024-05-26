@@ -1,0 +1,46 @@
+import pkg::*;
+class monitor;
+      virtual mem_intf mem_vif;
+      mailbox mon2scb,mon2ref;
+      
+      function new(virtual mem_intf mem_vif,mailbox mon2scb,mailbox mon2ref);
+	    this.mem_vif = mem_vif;
+	    this.mon2scb = mon2scb;
+	    this.mon2ref = mon2ref;
+      endfunction
+      
+      
+      task run(); 
+	   transaction trans,trans1;
+	   trans = new();
+	   trans1=new();
+
+	   fork    
+	       forever @(mem_vif.monitor_cb) begin
+	 
+	    
+		    trans.addr  = mem_vif.addr;
+		      trans.we 	= mem_vif.we;
+	      trans.din 	= mem_vif.din;
+	      
+		trans.en 	= mem_vif.en;
+		trans.dout = mem_vif.dout;
+		    trans.display("MON-SCB mailbox put",trans); 
+		    mon2scb.put(trans);
+
+	      end  
+
+	    forever @(mem_vif.monitor_cb) begin
+	       trans1.addr = mem_vif.addr;
+	trans1.en  = mem_vif.en;
+	trans1.we  = mem_vif.we;
+		trans1.din = mem_vif.din; 
+	     $display($time,"*******************************************trans1=%d",trans1.dout);
+	     trans1.display("MON-REF mailbox put",trans1); 
+	      mon2ref.put(trans1);
+
+	      end
+	   join_none
+      endtask
+  
+endclass

@@ -1,0 +1,45 @@
+import pkg::*;
+class scoreboard;
+   
+  mailbox mon2scb,mon2ref;
+  bit [7:0] mem[8];
+  
+
+  function new(mailbox mon2scb,mon2ref); 
+    this.mon2scb = mon2scb;  
+    this.mon2ref =mon2ref;
+  endfunction
+  
+
+  task run();  
+    fork
+    transaction trans;
+    transaction ref_trans;
+    ref_trans=new();
+    trans=new();
+    forever begin
+      mon2scb.get(trans);
+      //trans.display("MON-SCB GET"); 
+      
+    end
+    forever begin
+      mon2ref.get(ref_trans);
+     //trans.display("MNO-REF GWT"); 
+      
+      if(ref_trans.en && !ref_trans.we) begin
+        ref_trans.dout = mem[ref_trans.addr];
+
+      end
+      else if(ref_trans.en && ref_trans.we) begin
+        mem[ref_trans.addr] = ref_trans.din;
+     end
+     if(ref_trans.dout == trans.dout) 
+           $display("data matched dout = %d,ref_dout =%d",trans.dout,ref_trans.dout);
+     else
+           $display("data not mactehd dout = %d,ref_dout =%d",trans.dout,ref_trans.dout);
+
+    end
+    
+   join_none
+  endtask  
+endclass

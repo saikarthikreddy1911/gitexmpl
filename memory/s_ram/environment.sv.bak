@@ -1,0 +1,37 @@
+import pkg::*;
+class environment;
+  
+  
+  generator  gen;
+  driver     driv;
+  monitor    mon;
+  scoreboard scb;
+  
+  mailbox gen2driv;
+  mailbox mon2scb,mon2ref;  
+  
+  
+  virtual mem_intf mem_vif;
+  
+
+  function new(virtual mem_intf mem_vif);
+    this.mem_vif = mem_vif; 
+    gen2driv = new();
+    mon2scb  = new(); 
+    mon2ref  = new(); 
+    gen  = new(gen2driv);
+    driv = new(mem_vif,gen2driv);
+    mon  = new(mem_vif,mon2scb,mon2ref);
+    scb  = new(mon2scb,mon2ref);
+  endfunction
+
+  
+  task run();
+    fork 
+    gen.run();
+    driv.run();
+    mon.run();
+    scb.run();      
+    join
+  endtask  
+endclass

@@ -1,0 +1,36 @@
+interface mem_intf(input logic clk);
+  
+  //declaring the signals
+  logic [1:0] addr;
+  logic en;
+  logic we;
+  logic [7:0] din;
+  logic [7:0] dout;
+  
+  //driver clocking block
+  clocking driver_cb @(posedge clk);
+    default input #1 output #1;
+    output addr;
+    output en;
+    output we;
+    output din;
+    input  dout;  
+  endclocking
+  
+  //monitor clocking block
+  clocking monitor_cb @(posedge clk);
+    default input #1 output #1;
+    input addr;
+    input we;
+    input en;
+    input din;
+    input dout;  
+  endclocking
+  
+  //driver modport
+  modport DRIVER  (clocking driver_cb,input clk);
+  
+  //monitor modport  
+  modport MONITOR (clocking monitor_cb,input clk);
+  
+endinterface

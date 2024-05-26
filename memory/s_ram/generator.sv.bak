@@ -1,0 +1,28 @@
+import pkg::*;
+class generator;
+  
+  transaction trans;
+  int  repeat_count;
+   mailbox gen2driv;
+  
+    
+  //constructor
+  function new(mailbox gen2driv);
+    this.gen2driv = gen2driv;
+  endfunction
+  
+  task run();
+    fork
+      trans = new();
+    repeat(10) begin
+     // trans = new();
+      trans.randomize();
+      trans.display("GENERATOR random"); 
+      gen2driv.put(trans);
+      trans.display("Gen trans=%p");
+      trans.display("GENERATOR mailbox put"); 
+      
+    end
+   join_none
+  endtask
+endclass
